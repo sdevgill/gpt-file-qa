@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "gpt-file-qa"
+version = "0.1.0"
+description = "Use gpt on any text file"
+authors = ["Dev Gill <26435947+sdevgill@users.noreply.github.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "gpt_file_qa"}]
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.12"
+openai = "^0.27.6"
+pandas = "^2.0.1"
+tiktoken = "^0.4.0"
+python-dotenv = "^1.0.0"
+matplotlib = "^3.7.1"
+plotly = "^5.14.1"
+scipy = "^1.10.1"
+scikit-learn = "^1.2.2"
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.23.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
